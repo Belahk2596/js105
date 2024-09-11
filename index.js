@@ -40,9 +40,38 @@ function print(iteratorArray) { //for of loop
 }
 print(iteratorArray);
 console.log('line break');
-function printArray() {
+function printArray() { //for loop
     for(let i = 0; i < iteratorArray.length; i++) {
     console.log(iteratorArray[i]);
     }
 }
 printArray();
+console.log('line break');
+function whileLoop() {
+let i = 0;
+while (i < iteratorArray.length) { //while loop
+    console.log(iteratorArray[i]);
+    i++;
+};
+}
+whileLoop();
+console.log('line break');
+function doWhile() {
+    let i = 0;
+do {
+    console.log(iteratorArray[i]);
+    i++;
+} while (i < iteratorArray.length);
+};
+doWhile();
+const numbers = [1, 2, 3];
+const newNumbers = numbers.map(x => x * 2); //using map method to double elements
+console.log(newNumbers);
+const numbersTwo = [1, 2, 3];
+function checkNum(num) { 
+    return num >= 2;
+}
+const result = numbersTwo.filter(checkNum); //using the filter method to return a new array with condition
+console.log(result);
+
+
