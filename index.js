@@ -28,10 +28,7 @@ numbersArray.shift(); //remove added value from begging of array
 console.log(numbersArray);
 
 const iteratorArray = ['Bob','John','Rob','Tom','Ron','Don','Ren','Ten','Ben','Pen',]
-
-iteratorArray.forEach(iteratorArray => {
-    console.log(iteratorArray); //forEach function
-});
+iteratorArray.forEach((element) => console.log(element));
 console.log(" line break") 
 function print(iteratorArray) { //for of loop
     for (const name of iteratorArray) { 
