@@ -5,17 +5,17 @@ const conditionIsTrue = (name) => { // return true if 'Bob' function
     return false;
 }
 }
-console.log(conditionIsTrue('Bob')); //increment by 1 function
+console.log(conditionIsTrue('Bob')); //console log function 
 
-const incrementer  = (number) => {
-   return number + 1;
+const incrementer  = (number) => { //increment by 1 function
+   return number += 1;
 }
 console.log(incrementer(99));
 
 const string = "hello";
 const stringArray = string.split('');  //split string characters into array
 console.log(stringArray); 
-console.log(stringArray[2]); //array indexing
+console.log(stringArray[2]); //array indexing, prints L
 
 const numbersArray = [1, 2, 3, 4]; 
 numbersArray.push(5); //pushing 5 to the end of the array
@@ -73,5 +73,3 @@ function checkNum(num) {
 }
 const result = numbersTwo.filter(checkNum); //using the filter method to return a new array with condition
 console.log(result);
-
-
